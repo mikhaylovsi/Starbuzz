@@ -10,17 +10,15 @@ public class Drink {
     private String description;
     private int imageResourceId;
 
-    public Drink[] drinks = {
-//        new Drink("Latte", "A couple of espresso shots with steamed milk", R.drawable.latte),
-//        new Drink("Cappuccino", "Espresso, hot milk, and a steamed milk foam", R.drawable.capuccino),
-//        new Drink("Filter", "Highest quality beans roasted and brewed fresh", R.drawable.filter)
-        new Drink("Latte", "A couple of espresso shots with steamed milk", 1),
-        new Drink("Cappuccino", "Espresso, hot milk, and a steamed milk foam", 2),
-        new Drink("Filter", "Highest quality beans roasted and brewed fresh", 3)
+    public static Drink[] drinks = {
+
+        new Drink("Latte", "A couple of espresso shots with steamed milk", R.drawable.latte),
+        new Drink("Cappuccino", "Espresso, hot milk, and a steamed milk foam", R.drawable.capuccino),
+        new Drink("Filter", "Highest quality beans roasted and brewed fresh", R.drawable.filter)
 
     };
 
-     public Drink(String name, String description, int imageResourceId){
+     private Drink(String name, String description, int imageResourceId){
 
          this.name = name;
          this.description = description;
